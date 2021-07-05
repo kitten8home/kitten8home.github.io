@@ -8,27 +8,100 @@
     <title>kitten home</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" />    
 	<link href="css/templatemo-style.css" rel="stylesheet" />
+
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta property="og:title" content="Vide" />
+<meta name="keywords" content="Big store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<!-- js -->
+   <script src="js/jquery-1.11.1.min.js"></script>
+<!-- //js -->
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css'>
+<!--- start-rate---->
+<script src="js/jstarbox.js"></script>
+	<link rel="stylesheet" href="css/jstarbox.css" type="text/css" media="screen" charset="utf-8" />
+		<script type="text/javascript">
+			jQuery(function() {
+			jQuery('.starbox').each(function() {
+				var starbox = jQuery(this);
+					starbox.starbox({
+					average: starbox.attr('data-start-value'),
+					changeable: starbox.hasClass('unchangeable') ? false : starbox.hasClass('clickonce') ? 'once' : true,
+					ghosting: starbox.hasClass('ghosting'),
+					autoUpdateAverage: starbox.hasClass('autoupdate'),
+					buttons: starbox.hasClass('smooth') ? false : starbox.attr('data-button-count') || 5,
+					stars: starbox.attr('data-star-count') || 5
+					}).bind('starbox-value-changed', function(event, value) {
+					if(starbox.hasClass('random')) {
+					var val = Math.random();
+					starbox.next().text(' '+val);
+					return val;
+					} 
+				})
+			});
+		});
+		</script>
+
+
 </head>
 
 <body> 
+	<div class="fake">
+		<ul class="nav_bar_tp_ctn">
+			<li class="nav_bar_tp_ctn_li"><a href="index.html" class="nav_bar_link_active">Home</a></li>
+			<li class="nav_bar_tp_ctn_li"><a href="payment.html" class="nav_bar_link">Payment</a></li>
+			<li class="nav_bar_tp_ctn_li"><a href="contact.html" class="nav_bar_link">Contact</a></li>
+			<li class="nav_bar_tp_ctn_li"><a href="terms.html" class="nav_bar_link">Terms</a></li>
+			
+		</ul>
+		<div class="cart" style="position: fixed; ">
+						
+			<span class="fa fa-shopping-cart my-cart-icon"><span class="badge badge-notify my-cart-badge"></span></span>
+		</div>
+	</div>
 
 	<div class="container">
 	<!-- Top box -->
-		<!-- Logo & Site Name -->
-		<div>
-			<ul class="nav_bar_tp_ctn">
-				<li class="nav_bar_tp_ctn_li"><a href="index.html" class="nav_bar_link_active">Home</a></li>
-				<li class="nav_bar_tp_ctn_li"><a href="payment.html" class="nav_bar_link">Payment</a></li>
-				<li class="nav_bar_tp_ctn_li"><a href="contact.html" class="nav_bar_link">Contact</a></li>
-			</ul>
-		</div>
+	<div class="header">
+		
+
+		<div class="container">
+			
+			<!-- Logo & Site Name -->
+			<div>
+			
+			
+				
+			
+			</div>
+		
 		
 
 		<main>
-			<header class="row tm-welcome-section">
-				<h2 class="col-12 text-center tm-section-title">Welcome to KittenHome</h2>
-				<p class="col-12 text-center">You are welcome to KittenHome, hope you find what makes you happy here and will love to come visit again.</p>
-			</header>
+			
+			<header class="row tm-welcome-section"></header>
 			
 			<div class="tm-paging-links">
 				<nav>
@@ -48,6 +121,10 @@
 							<figcaption>
 	                        <a href="09463.html" class="hover"><h4 class="tm-gallery-title">Kordelia</h4>  </a>								
 							</figcaption>
+							<p ><em class="item_price">$900.00</em></p>
+							<div class="add">
+								<button class="btn btn-danger my-cart-btn my-cart-b " data-id="1" data-name="Kordelia" data-summary="summary 1" data-price="900.00" data-quantity="1" data-image="./img/img/img/Screenshot (30).jpg">Add to Cart</button>
+							 </div>
 						</figure>
 					</article> 
 
@@ -58,6 +135,10 @@
 							<figcaption>
 	                        <a href="09463 copy.html" class="hover"><h4 class="tm-gallery-title"> Potap Persian</h4>  </a>								
 							</figcaption>
+							<p ><em class="item_price">$700.00</em></p>
+							<div class="add">
+								<button class="btn btn-danger my-cart-btn my-cart-b " data-id="2" data-name="Potap Persian" data-summary="summary 1" data-price="700.00" data-quantity="1" data-image="./img/img/img2/Screenshot (34).jpg">Add to Cart</button>
+							 </div>
 						</figure>
 					</article> 
 
@@ -69,6 +150,10 @@
 							<figcaption>
 	                        <a href="09463 copy 2.html" class="hover"><h4 class="tm-gallery-title">Darius purebred Abyssinian</h4>  </a>								
 							</figcaption>
+							<p ><em class="item_price">$900.00</em></p>
+							<div class="add">
+								<button class="btn btn-danger my-cart-btn my-cart-b " data-id="3" data-name="Darius purebred Abyssinian" data-summary="summary 1" data-price="900.00" data-quantity="1" data-image="./img/img/img3/Screenshot (37).jpg">Add to Cart</button>
+							 </div>
 						</figure>
 					</article> 
 
@@ -78,6 +163,10 @@
 							<figcaption>
 	                        <a href="09463 copy 3.html" class="hover"><h4 class="tm-gallery-title">Fairy Fun purebred Abyssinian</h4>  </a>								
 							</figcaption>
+							<p ><em class="item_price">$900.00</em></p>
+							<div class="add">
+								<button class="btn btn-danger my-cart-btn my-cart-b " data-id="4" data-name="Fairy Fun purebred Abyssinian" data-summary="summary 1" data-price="900.00" data-quantity="1" data-image="./img/img/img4/Screenshot (42).jpg">Add to Cart</button>
+							 </div>
 						</figure>
 					</article> 
 
@@ -87,6 +176,10 @@
 							<figcaption>
 	                        <a href="09463 copy 4.html" class="hover"><h4 class="tm-gallery-title">Solomon Scottish </h4>  </a>								
 							</figcaption>
+							<p ><em class="item_price">$950.00</em></p>
+							<div class="add">
+								<button class="btn btn-danger my-cart-btn my-cart-b " data-id="5" data-name="Solomon Scottish" data-summary="summary 1" data-price="950.00" data-quantity="1" data-image="./img/img/img5/Screenshot (45).jpg">Add to Cart</button>
+							 </div>
 						</figure>
 					</article> 
 
@@ -96,6 +189,10 @@
 							<figcaption>
 	                        <a href="09463 copy 5.html" class="hover"><h4 class="tm-gallery-title">Fiona Scottish</h4>  </a>								
 							</figcaption>
+							<p ><em class="item_price">$750.00</em></p>
+							<div class="add">
+								<button class="btn btn-danger my-cart-btn my-cart-b " data-id="6" data-name="Fiona Scottish" data-summary="summary 1" data-price="750.00" data-quantity="1" data-image="./img/img/img6/Screenshot (48).jpg">Add to Cart</button>
+							 </div>
 						</figure>
 					</article> 
 					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
@@ -104,6 +201,10 @@
 							<figcaption>
 	                        <a href="09463 copy 6.html" class="hover"><h4 class="tm-gallery-title">Kukla Scottish</h4>  </a>								
 							</figcaption>
+							<p ><em class="item_price">$850.00</em></p>
+							<div class="add">
+								<button class="btn btn-danger my-cart-btn my-cart-b " data-id="7" data-name="Kukla Scottish" data-summary="summary 1" data-price="850.00" data-quantity="1" data-image="./img/img/img7/Screenshot (56).jpg">Add to Cart</button>
+							 </div>
 						</figure>
 					</article> 
 					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
@@ -112,6 +213,10 @@
 							<figcaption>
 	                        <a href="09463 copy 7.html" class="hover"><h4 class="tm-gallery-title">Lucio Siberian</h4>  </a>								
 							</figcaption>
+							<p ><em class="item_price">$800.00</em></p>
+							<div class="add">
+								<button class="btn btn-danger my-cart-btn my-cart-b " data-id="8" data-name="Lucio Siberian" data-summary="summary 1" data-price="800.00" data-quantity="1" data-image="./img/img/img8/Screenshot (59).jpg">Add to Cart</button>
+							 </div>
 						</figure>
 					</article> 
 					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
@@ -120,6 +225,10 @@
 							<figcaption>
 	                        <a href="09463 copy 8.html" class="hover"><h4 class="tm-gallery-title">Hilton British</h4>  </a>								
 							</figcaption>
+							<p ><em class="item_price">$700.00</em></p>
+							<div class="add">
+								<button class="btn btn-danger my-cart-btn my-cart-b " data-id="9" data-name="Hilton British" data-summary="summary 1" data-price="700.00" data-quantity="1" data-image="./img/img/img9/Screenshot (63).jpg">Add to Cart</button>
+							 </div>
 						</figure>
 					</article> 
 					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
@@ -128,6 +237,10 @@
 							<figcaption>
 	                        <a href="09463 copy 9.html" class="hover"><h4 class="tm-gallery-title">Z*Kitto Maine Coon</h4>  </a>								
 							</figcaption>
+							<p ><em class="item_price">$1000.00</em></p>
+							<div class="add">
+								<button class="btn btn-danger my-cart-btn my-cart-b " data-id="10" data-name="Z*Kitto Maine Coon" data-summary="summary 1" data-price="1000.00" data-quantity="1" data-image="./img/img/img10/Screenshot (68).jpg">Add to Cart</button>
+							 </div>
 						</figure>
 					</article> 
 					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
@@ -136,6 +249,10 @@
 							<figcaption>
 	                        <a href="09463 copy 10.html" class="hover"><h4 class="tm-gallery-title">Nikolasha British</h4>  </a>								
 							</figcaption>
+							<p ><em class="item_price">$850.00</em></p>
+							<div class="add">
+								<button class="btn btn-danger my-cart-btn my-cart-b " data-id="11" data-name="Nikolasha British" data-summary="summary 1" data-price="850.00" data-quantity="1" data-image="./img/img/img11/Screenshot (73).jpg">Add to Cart</button>
+							 </div>
 						</figure>
 					</article> 
 					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
@@ -144,6 +261,10 @@
 							<figcaption>
 	                        <a href="09463 copy 11.html" class="hover"><h4 class="tm-gallery-title">Yaroslava British</h4>  </a>								
 							</figcaption>
+							<p ><em class="item_price">$900.00</em></p>
+							<div class="add">
+								<button class="btn btn-danger my-cart-btn my-cart-b " data-id="12" data-name="Yaroslava British" data-summary="summary 1" data-price="900.00" data-quantity="1" data-image="./img/img/img12/Screenshot (78).jpg">Add to Cart</button>
+							 </div>
 						</figure>
 					</article> 
 					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
@@ -152,8 +273,210 @@
 							<figcaption>
 	                        <a href="09463 copy 12.html" class="hover"><h4 class="tm-gallery-title">Baly British</h4>  </a>								
 							</figcaption>
+							<p ><em class="item_price">$950.00</em></p>
+							<div class="add">
+								<button class="btn btn-danger my-cart-btn my-cart-b " data-id="13" data-name="Baly British" data-summary="summary 1" data-price="950.00" data-quantity="1" data-image="./img/img/img13/Screenshot (81).jpg">Add to Cart</button>
+							 </div>
 						</figure>
 					</article>
+
+
+
+
+
+
+
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>							
+	                     <a href="./08463 copy.html" class="pic_item"><img src="./img/img/img14/Screenshot (132).png" alt="Image" class="img-fluid tm-gallery-img" >  </a>                          
+							<figcaption>
+	                        <a href="./08463 copy.html" class="hover"><h4 class="tm-gallery-title">Hunter purebred Abyssinian</h4>  </a>								
+							</figcaption>
+							<p ><em class="item_price">$1000.00</em></p>
+							<div class="add">
+								<button class="btn btn-danger my-cart-btn my-cart-b " data-id="14" data-name="Hunter purebred Abyssinian" data-summary="summary 1" data-price="1000.00" data-quantity="1" data-image="./img/img/img14/Screenshot (132).png">Add to Cart</button>
+							 </div>
+						</figure>
+					</article> 
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>							
+	                     <a href="./08463 copy 2.html" class="pic_item"><img src="./img/img/img15/Screenshot (136).jpg" alt="Image" class="img-fluid tm-gallery-img" >  </a>                          
+							<figcaption>
+	                        <a href="./08463 copy 2.html" class="hover"><h4 class="tm-gallery-title">Xadas Maine Coon</h4>  </a>								
+							</figcaption>
+							<p ><em class="item_price">$1.250.00</em></p>
+							<div class="add">
+								<button class="btn btn-danger my-cart-btn my-cart-b " data-id="15" data-name="Xadas Maine Coon" data-summary="summary 1" data-price="1.250.00" data-quantity="1" data-image="./img/img/img15/Screenshot (136).jpg">Add to Cart</button>
+							 </div>
+						</figure>
+					</article> 
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>							
+	                     <a href="./08463 copy 3.html" class="pic_item"><img src="./img/img/img16/Screenshot (142).jpg" alt="Image" class="img-fluid tm-gallery-img" >  </a>                          
+							<figcaption>
+	                        <a href="./08463 copy 3.html" class="hover"><h4 class="tm-gallery-title">Angel Maine Coon</h4>  </a>								
+							</figcaption>
+							<p ><em class="item_price">$900.00</em></p>
+							<div class="add">
+								<button class="btn btn-danger my-cart-btn my-cart-b " data-id="16" data-name="Angel Maine Coon" data-summary="summary 1" data-price="900.00" data-quantity="1" data-image="./img/img/img16/Screenshot (142).jpg">Add to Cart</button>
+							 </div>
+						</figure>
+					</article> 
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>							
+	                     <a href="./08463 copy 4.html" class="pic_item"><img src="./img/img/img17/Screenshot (146).png" alt="Image" class="img-fluid tm-gallery-img" >  </a>                          
+							<figcaption>
+	                        <a href="./08463 copy 4.html" class="hover"><h4 class="tm-gallery-title">Flash Siberian</h4>  </a>								
+							</figcaption>
+							<p ><em class="item_price">$700.00</em></p>
+							<div class="add">
+								<button class="btn btn-danger my-cart-btn my-cart-b " data-id="17" data-name="Flash Siberian" data-summary="summary 1" data-price="700.00" data-quantity="1" data-image="./img/img/img17/Screenshot (146).png">Add to Cart</button>
+							 </div>
+						</figure>
+					</article> 
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>							
+	                     <a href="./08463 copy 5.html" class="pic_item"><img src="./img/img/img18/Screenshot (152).jpg" alt="Image" class="img-fluid tm-gallery-img" >  </a>                          
+							<figcaption>
+	                        <a href="./08463 copy 5.html" class="hover"><h4 class="tm-gallery-title"> Marmaris Russian blue</h4>  </a>								
+							</figcaption>
+							<p ><em class="item_price">$1100.00</em></p>
+							<div class="add">
+								<button class="btn btn-danger my-cart-btn my-cart-b " data-id="18" data-name=" Marmaris Russian blue" data-summary="summary 1" data-price="1100.00" data-quantity="1" data-image="./img/img/img18/Screenshot (152).jpg">Add to Cart</button>
+							 </div>
+						</figure>
+					</article> 
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>							
+	                     <a href="./08463 copy 6.html" class="pic_item"><img src="./img/img/img19/Screenshot (158).jpg" alt="Image" class="img-fluid tm-gallery-img" >  </a>                          
+							<figcaption>
+	                        <a href="./08463 copy 6.html" class="hover"><h4 class="tm-gallery-title">Elf male kitten Devon Rex</h4>  </a>								
+							</figcaption>
+							<p ><em class="item_price">$1,500.00</em></p>
+							<div class="add">
+								<button class="btn btn-danger my-cart-btn my-cart-b " data-id="19" data-name="Elf male kitten Devon Rex" data-summary="summary 1" data-price="1500.00" data-quantity="1" data-image="./img/img/img19/Screenshot (158).jpg">Add to Cart</button>
+							 </div>
+						</figure>
+					</article> 
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>							
+	                     <a href="./08463 copy 7.html" class="pic_item"><img src="./img/img/img20/Screenshot (166).jpg" alt="Image" class="img-fluid tm-gallery-img" >  </a>                          
+							<figcaption>
+	                        <a href="./08463 copy 7.html" class="hover"><h4 class="tm-gallery-title">Nella purebred Bengal</h4>  </a>								
+							</figcaption>
+							<p ><em class="item_price">$2,000.00</em></p>
+							<div class="add">
+								<button class="btn btn-danger my-cart-btn my-cart-b " data-id="20" data-name="Nella purebred Bengal" data-summary="summary 1" data-price="2,000.00" data-quantity="1" data-image="./img/img/img20/Screenshot (166).jpg">Add to Cart</button>
+							 </div>
+						</figure>
+					</article> 
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>							
+	                     <a href="./08463 copy 8.html" class="pic_item"><img src="./img/img/img21/Screenshot (173).jpg" alt="Image" class="img-fluid tm-gallery-img" >  </a>                          
+							<figcaption>
+	                        <a href="./08463 copy 8.html" class="hover"><h4 class="tm-gallery-title">Zlata purebred Bengal</h4>  </a>								
+							</figcaption>
+							<p ><em class="item_price">$900.00</em></p>
+							<div class="add">
+								<button class="btn btn-danger my-cart-btn my-cart-b " data-id="21" data-name="Zlata purebred Bengal" data-summary="summary 1" data-price="900.00" data-quantity="1" data-image="./img/img/img21/Screenshot (173).jpg">Add to Cart</button>
+							 </div>
+						</figure>
+					</article> 
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>							
+	                     <a href="./08463 copy 9.html" class="pic_item"><img src="./img/img/img22/Screenshot (179).jpg" alt="Image" class="img-fluid tm-gallery-img" >  </a>                          
+							<figcaption>
+	                        <a href="./08463 copy 9.html" class="hover"><h4 class="tm-gallery-title">Cimba Burmese</h4>  </a>								
+							</figcaption>
+							<p ><em class="item_price">$1,400.00</em></p>
+							<div class="add">
+								<button class="btn btn-danger my-cart-btn my-cart-b " data-id="22" data-name="Cimba Burmese" data-summary="summary 1" data-price="1,400.00" data-quantity="1" data-image="./img/img/img22/Screenshot (179).jpg">Add to Cart</button>
+							 </div>
+						</figure>
+					</article> 
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>							
+	                     <a href="./08463 copy 10.html" class="pic_item"><img src="./img/img/img23/Screenshot (184).jpg" alt="Image" class="img-fluid tm-gallery-img" >  </a>                          
+							<figcaption>
+	                        <a href="./08463 copy 10.html" class="hover"><h4 class="tm-gallery-title"> Cash Burmese</h4>  </a>								
+							</figcaption>
+							<p ><em class="item_price">$1,800.00</em></p>
+							<div class="add">
+								<button class="btn btn-danger my-cart-btn my-cart-b " data-id="23" data-name=" Cash Burmese" data-summary="summary 1" data-price="1,800.00" data-quantity="1" data-image="./img/img/img23/Screenshot (184).jpg">Add to Cart</button>
+							 </div>
+						</figure>
+					</article> 
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>							
+	                     <a href="./08463 copy 11.html" class="pic_item"><img src="./img/img/img24/Screenshot (189).jpg" alt="Image" class="img-fluid tm-gallery-img" >  </a>                          
+							<figcaption>
+	                        <a href="./08463 copy 11.html" class="hover"><h4 class="tm-gallery-title"> K*Nelson Siamo</h4>  </a>								
+							</figcaption>
+							<p ><em class="item_price">$1,900.00</em></p>
+							<div class="add">
+								<button class="btn btn-danger my-cart-btn my-cart-b " data-id="24" data-name=" K*Nelson Siamo" data-summary="summary 1" data-price="1,900.00" data-quantity="1" data-image="./img/img/img24/Screenshot (189).jpg">Add to Cart</button>
+							 </div>
+						</figure>
+					</article> 
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>							
+	                     <a href="./08463 copy 12.html" class="pic_item"><img src="./img/img/img25/Screenshot (195).jpg" alt="Image" class="img-fluid tm-gallery-img" >  </a>                          
+							<figcaption>
+	                        <a href="./08463 copy 12.html" class="hover"><h4 class="tm-gallery-title">Olly</h4>  </a>								
+							</figcaption>
+							<p ><em class="item_price">$2,000.00</em></p>
+							<div class="add">
+								<button class="btn btn-danger my-cart-btn my-cart-b " data-id="25" data-name="Olly" data-summary="summary 1" data-price="900.00" data-quantity="1" data-image="./img/img/img25/Screenshot (195).jpg">Add to Cart</button>
+							 </div>
+						</figure>
+					</article> 
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>							
+	                     <a href="./08463 copy 13.html" class="pic_item"><img src="./img/img/img26/Screenshot (200).jpg" alt="Image" class="img-fluid tm-gallery-img" >  </a>                          
+							<figcaption>
+	                        <a href="./08463 copy 13.html" class="hover"><h4 class="tm-gallery-title">Valeriya Munchkin</h4>  </a>								
+							</figcaption>
+							<p ><em class="item_price">$2,200.00</em></p>
+							<div class="add">
+								<button class="btn btn-danger my-cart-btn my-cart-b " data-id="26" data-name="Valeriya Munchkin" data-summary="summary 1" data-price="2,200.00" data-quantity="1" data-image="./img/img/img26/Screenshot (200).jpg">Add to Cart</button>
+							 </div>
+						</figure>
+					</article> 
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>							
+	                     <a href="./08463 copy 14.html" class="pic_item"><img src="./img/img/img27/Screenshot (205).jpg" alt="Image" class="img-fluid tm-gallery-img" >  </a>                          
+							<figcaption>
+	                        <a href="./08463 copy 14.html" class="hover"><h4 class="tm-gallery-title">Fidel</h4>  </a>								
+							</figcaption>
+							<p ><em class="item_price">$2,000.00</em></p>
+							<div class="add">
+								<button class="btn btn-danger my-cart-btn my-cart-b " data-id="27" data-name="Fidel" data-summary="summary 1" data-price="2,000.00" data-quantity="1" data-image="./img/img/img27/Screenshot (205).jpg">Add to Cart</button>
+							 </div>
+						</figure>
+					</article> 
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>							
+	                     <a href="./08463 copy 15.html" class="pic_item"><img src="./img/img/img28/Screenshot (212).jpg" alt="Image" class="img-fluid tm-gallery-img" >  </a>                          
+							<figcaption>
+	                        <a href="./08463 copy 15.html" class="hover"><h4 class="tm-gallery-title">Zorro</h4>  </a>								
+							</figcaption>
+							<p ><em class="item_price">$1,300.00</em></p>
+							<div class="add">
+								<button class="btn btn-danger my-cart-btn my-cart-b " data-id="28" data-name="Zorro" data-summary="summary 1" data-price="1,300.00" data-quantity="1" data-image="./img/img/img28/Screenshot (212).jpg">Add to Cart</button>
+							 </div>
+						</figure>
+					</article> 
+
+
+
+
+
+
+
+
+
+
+
 				</div>
 				</div> 
 			</div>
@@ -161,29 +484,7 @@
 				<div class="row">
 					<div class="col-md-6">
 						<div class="tm-description-box"> 
-							<h4 class="tm-gallery-title">We offer 3 types of delivery:</h4>
-							<p class="tm-mb-45"> <b> 1. Delivery by plane.  We use DeltaCargo, AmericanAirlines, United airlines(PetSafe) and Alaska airlines as our main carriers. Delivery is available to your nearest airport with their facility. We book flight and give you all needed information to pick your kitten up. You have to show your ID and AWB number at the airlines facility. 
-
-								<br> *Option is not available if the temperature in each point is more than 85 degrees. 
-								
-								<br> 2. Delivery by car. We use delivery services to bring kittens directly to your home. This type of delivery works for near by States only. Price depends of delivery location. 
-								
-								<br> 3. Personal delivery. We use all kinds of transportation to make it ''door to door''. Works for all States. Ask for price.
-								
-								 
-								
-								<br> You are always more than welcome to pick your kitten up at our location.</b></p>
 							
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="tm-description-box"> 
-							<h4 class="tm-gallery-title">RETURN POLICY</h4>
-							<p class="tm-mb-45"><b>According to the sales contract you can return the cat only in case of genetic disease detected. 
-								<br> *Allergy to the cat is not a cause for return.
-								
-								<br> *If a kitten stops using a litter box it is not a cause for return. (But we allways can help to get him accustomed to litter box)
-							</b></p>
 						</div>
 					</div>
 				</div>
@@ -192,7 +493,7 @@
 
 		</main>
 
-		<footer class="tm-footer text-center">
+		<footer class="tm-footer text-center" style="background-color: black;">
 			<p>Copyright &copy; 2021 knk
             
             | Design: <a rel="nofollow" >knk</a></p>
@@ -214,5 +515,49 @@
 			});
 		});
 	</script>
+
+	<!-- for bootstrap working -->
+	<script src="js/bootstrap.js"></script>
+	<!-- //for bootstrap working -->
+	<script type='text/javascript' src="js/jquery.mycart.js"></script>
+	  <script type="text/javascript">
+	  $(function () {
+	
+		var goToCartIcon = function($addTocartBtn){
+		  var $cartIcon = $(".my-cart-icon");
+		  var $image = $('<img width="30px" height="30px" src="' + $addTocartBtn.data("image") + '"/>').css({"position": "fixed", "z-index": "999"});
+		  $addTocartBtn.prepend($image);
+		  var position = $cartIcon.position();
+		  $image.animate({
+			top: position.top,
+			left: position.left
+		  }, 500 , "linear", function() {
+			$image.remove();
+		  });
+		}
+	
+		$('.my-cart-btn').myCart({
+		  classCartIcon: 'my-cart-icon',
+		  classCartBadge: 'my-cart-badge',
+		  affixCartIcon: true,
+		  checkoutCart: function(products) {
+			$.each(products, function(){
+			  console.log(this);
+			});
+		  },
+		  clickOnAddToCart: function($addTocart){
+			goToCartIcon($addTocart);
+		  },
+		  getDiscountPrice: function(products) {
+			var total = 0;
+			$.each(products, function(){
+			  total += this.quantity * this.price;
+			});
+			return total * 1;
+		  }
+		});
+	
+	  });
+	  </script>
 </body>
 </html>
